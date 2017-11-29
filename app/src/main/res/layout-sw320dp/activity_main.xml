@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.teknords.guideforpokemon.MainActivity"
+    android:background="@drawable/homebg">
+
+    <Button
+
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnPlyr"
+        android:background="@drawable/homemain03"
+        android:layout_above="@+id/btnCatching"
+        android:layout_alignLeft="@+id/btnCatching"
+        android:layout_alignStart="@+id/btnCatching"
+        android:layout_marginTop="3dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnCatching"
+        android:background="@drawable/homemain06"
+        android:layout_above="@+id/btnStp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="23dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnTraining"
+        android:background="@drawable/homemain08"
+        android:layout_above="@+id/btnPlyr"
+        android:layout_alignLeft="@+id/btnPlyr"
+        android:layout_alignStart="@+id/btnPlyr" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnStp"
+        android:background="@drawable/homemain10"
+        android:layout_above="@+id/btnGyms"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="23dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnGyms"
+        android:background="@drawable/homemain12"
+        android:layout_above="@+id/btnbtng"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="23dp" />
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:id="@+id/btnbtng"
+        android:background="@drawable/homemain14"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="23dp" />
+
+
+
+
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="320dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_home_footer"
+        android:layout_marginTop="105dp"
+        android:layout_alignTop="@+id/btnbtng"
+        android:layout_centerHorizontal="true">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>
